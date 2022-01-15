@@ -9,23 +9,6 @@ function DataArrayCreator() {
   }
 
 }
-function Descriptivestats() {
-
-  Logger.log(Mean(DataArray))
-  Logger.log(Sum(DataArray))
-  Logger.log(Minimum(DataArray))
-  Logger.log(Maximum(DataArray))
-  Logger.log(DataArray.length)
-  Logger.log(Median(DataArray))
-  Logger.log(StandardDeviation(DataArray))
-  Logger.log(Skewness(DataArray))
-  Logger.log(Kurtosis(DataArray))
-  Logger.log(SumofSquares(DataArray))
-  Logger.log(JarqueBera(DataArray))
-  Logger.log(Probability(DataArray))
-}
-
-
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
