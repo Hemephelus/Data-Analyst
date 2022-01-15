@@ -36,6 +36,9 @@ function StatsSummary(DataSet, HeaderRow) {
          DataSet.splice(0, 1)
   }else{
       for (let j = 0; j < DataSet[0].length; j++) {
+      if(isString(DataSet[0][j])){
+          return "Please confirm a header row or select only the range of values."
+        }
        Summary.Title.push("var"+j)
      }
   }
