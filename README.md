@@ -1,2 +1,3 @@
-# Limits
-An econometric add on that allows economist to carry out econometrics analysis for free.
+# About Me
+
+My name is nwachukwu ujubuonu, a data analyst. In this repo, you would be able to see some the personal projects I am working on, and hoping you find something that is intersting. I 
