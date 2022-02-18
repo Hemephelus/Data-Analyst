@@ -1,0 +1,144 @@
+function onOpen() {
+  initMenu();
+  DefaultDateRange();
+
+}
+
+function initMenu() {
+  var ui = SpreadsheetApp.getUi();
+  var Menu = ui.createMenu("Your Tools");
+  Menu.addItem("Update Form", "UpdateForm");
+  Menu.addSeparator();
+  Menu.addItem("Activate Daily Form Reminder Email", "ActivateDailyFormReminderEmail");
+  Menu.addItem("Activate Weekly Checkup Reminder Email", "ActivateWeeklyCheckupReminderEmaill");
+  Menu.addToUi();
+
+}
+
+function ActivateDailyFormReminderEmail(){
+  ScriptApp.newTrigger('FormReminder')
+  .timeBased()
+  .atHour(9)
+  .everyDays(1)
+  .create();
+}
+
+
+function ActivateWeeklyCheckupReminderEmaill(){
+  ScriptApp.newTrigger('CheckupReminderEmail')
+  .timeBased()
+  .atHour(9)
+  .onWeekDay(ScriptApp.WeekDay.MONDAY)
+  .create();
+}
+
+
+function DefaultDateRange() {
+  var ExpensesName = SpreadsheetApp.getActiveSpreadsheet().getSheets()[3].getSheetName();
+  var IncomeName = SpreadsheetApp.getActiveSpreadsheet().getSheets()[4].getSheetName();
+  var Expenses = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(ExpensesName);
+  var Income = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(IncomeName);
+  var Today = new Date();
+
+  Income.getRange("IncEndDate").setValue(Today);
+  // Income.getRange("IncStartDate").setValue(Today-31);
+  Expenses.getRange("ExpEndDate").setValue(Today);
+  // Expenses.getRange("ExpStartDate").setValue(Today-7);
+  // Logger.log(V)
+  //Logger.log(Income)
+
+}
+
+function UpdateForm() {
+  var FormURL = SpreadsheetApp.getActiveSpreadsheet().getFormUrl();
+  var SheetURL = SpreadsheetApp.getActiveSpreadsheet().getUrl();
+  var Detail = SpreadsheetApp.getActiveSpreadsheet().getSheets()[6].getSheetName();
+  var Details = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(Detail);
+  var FormLink = Details.getRange("FormLink").setValue(FormURL);
+  var SheetLink = Details.getRange("SheetLink").setValue(SheetURL);
+  var FormID = Details.getRange("FormID").getValue();
+  //var Detail = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Details").getSheetId().toString();
+  var Form = FormApp.openById(FormID);
+  var IDF = Form.getItems()[3].getId().toString();
+  var lr = Details.getLastRow() - 1;
+  var Formvalues = Details.getRange(2, 2, lr, 1).getValues().filter(function (PID) {
+    if (PID[0] !== "") {
+      return true;
+    } else {
+      return false;
+    }
+  });
+  var ItemEXP = Form.getItemById(IDF).asListItem().setChoiceValues(Formvalues);
+
+
+  var IDF = Form.getItems()[0].getId().toString();
+  var lr = Details.getLastRow() - 1;
+  var Formvalues = Details.getRange(2, 6, lr, 1).getValues().filter(function (PID) {
+    if (PID[0] !== "") {
+      return true;
+    } else {
+      return false;
+    }
+  }).filter(function (PID) {
+    if (PID[0] !== "All") {
+      return true;
+    } else {
+      return false;
+    }
+  });
+  var ItemEXP = Form.getItemById(IDF).asListItem().setChoiceValues(Formvalues);
+
+  var IDF = Form.getItems()[5].getId().toString();
+  var lr = Details.getLastRow() - 1;
+  var Formvalues = Details.getRange(2, 10, lr, 1).getValues().filter(function (PID) {
+    if (PID[0] !== "") {
+      return true;
+    } else {
+      return false;
+    }
+  });;
+  var ItemEXP = Form.getItemById(IDF).asListItem().setChoiceValues(Formvalues);
+
+
+  var IDT = Form.getItems()[0].getId().toString();
+  Logger.log(Form.getItemById(IDT).getTitle());
+  Logger.log(Formvalues);
+}
+
+function FormReminder() {
+  var Detail = SpreadsheetApp.getActiveSpreadsheet().getSheets()[6].getSheetName();
+  var Details = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(Detail);
+  var lr = Details.getLastRow() - 1;
+  var Body = Details.getRange("FormBody").getValue();
+  var FormSubject = Details.getRange("FormSubject").getValue();
+  var EmailAddress = Details.getRange(2, 6, lr, 2).getValues().filter(function (PID) {
+    if (PID[1] !== "") {
+      return true;
+    } else {
+      return false;
+    }
+  })
+  for (var q = 0; q < EmailAddress.length; ++q) {
+    MailApp.sendEmail(EmailAddress[q][1], FormSubject, Body);
+    Logger.log(EmailAddress[q][1]);
+  }
+}
+
+function CheckupReminderEmail() {
+  var Detail = SpreadsheetApp.getActiveSpreadsheet().getSheets()[6].getSheetName();
+  var Details = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(Detail);
+  var lr = Details.getLastRow() - 1;
+  var Body = Details.getRange("SheetBody").getValue();
+  var FormSubject = Details.getRange("SheetSubject").getValue();
+  var EmailAddress = Details.getRange(2, 6, lr, 2).getValues().filter(function (PID) {
+    if (PID[1] !== "") {
+      return true;
+    } else {
+      return false;
+    }
+  })
+  for (var q = 0; q < EmailAddress.length; ++q) {
+    MailApp.sendEmail(EmailAddress[q][1], FormSubject, Body);
+    Logger.log(EmailAddress[q][1]);
+  }
+}
