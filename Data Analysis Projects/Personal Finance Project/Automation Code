@@ -2,7 +2,7 @@ let ss = SpreadsheetApp.getActiveSpreadsheet()
 
 /*
                     /////onOpen()/////
-This function run the fuction as the sheet is open.
+This function runs as the sheet is open.
 */
 function onOpen() {
   initMenu();
