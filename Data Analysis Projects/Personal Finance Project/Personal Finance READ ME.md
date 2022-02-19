@@ -42,11 +42,11 @@ The form keeps track of:
 ## JavaScript (Apps Script)
   ### 6. Details
 In order to make life easier for myself and any other person that would like to use the sheet, I wrote a script that creates a custom menu called  "**Your Tools**". This menu is beside the "**Help**", at the right hand side. This function allows you to update the form, Activate Daily Form Reminder Email, Activate Weekly Checkup Reminder Email. These function work hand in hand with the Details tab.
-		  - Update Form:
-			The update form function allow people to update the form from the spread sheet without going to the actual form.
-			-The Activate Daily Form Reminder Email function creates a trigger that send an email reminding me to record my expenses or Income for the day. I have found this to increase the amount of times I remember to track my finances.
-			-Activate Weekly Checkup Reminder Email function creates a trigger that send an email reminding you to record my expenses or Income for the week. This is for people that would prefer a weekly reminder.
-
+ -  **The Update Form** function allow people to update the form from the spread sheet without going to the actual form.
+ - **The Activate Daily Form Reminder Email** function creates a trigger that send an email reminding me to record my expenses or Income for
+   the day. I have found this to increase the amount of times I remember
+   to track my finances.
+ - **Activate Weekly Checkup Reminder Email** function creates a trigger that send an email reminding you to record my expenses or Income for the week. This is for people that would prefer a weekly reminder.
 
 ## Conclusion
 
