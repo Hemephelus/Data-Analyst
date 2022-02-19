@@ -1,6 +1,6 @@
 # Personal Finance
 In other to improve my relationship with money, I decided to make a finance tracker to help with that.
-For most this project I use [Google sheet](https://docs.google.com/spreadsheets/d/1vEobyPacJvvCKcYRdku-EP6aoEGuqFK67RVonRGobpY/edit?usp=sharing). However, I use [Google Form](https://forms.gle/rfmUZF7yRDtMbejJA) for data collection and [Apps Script](https://github.com/Hemephelus/Data-Analyst/blob/ebd313ba68055096e133469ec488202a3d95cd4b/Data%20Analysis%20Projects/Personal%20Finance%20Project/Automation%20Code). for Automation.
+For most this project I use [Google sheet](https://docs.google.com/spreadsheets/d/1vEobyPacJvvCKcYRdku-EP6aoEGuqFK67RVonRGobpY/edit?usp=sharing) for the analysis and Dashboard. However, I use [Google Form](https://forms.gle/rfmUZF7yRDtMbejJA) for data collection and [Apps Script](https://github.com/Hemephelus/Data-Analyst/blob/ebd313ba68055096e133469ec488202a3d95cd4b/Data%20Analysis%20Projects/Personal%20Finance%20Project/Automation%20Code). for Automation.
 
 
 ## Google Sheets
