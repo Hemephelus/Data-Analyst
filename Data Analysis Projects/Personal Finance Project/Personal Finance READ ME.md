@@ -12,7 +12,7 @@ In the sheet we have 6 Tabs.
  ### 1. Summary
   - This tab represents the dashboard as it shows a live and dynamic interface that allows you to see a summary of my finances at any point in time. 
   - You can change the time frame to see a summary during a particular period.
-  - There are 2 charts on the tab.  The 1st is a bar graph that shows the total amount of money earned from a particular period, grouped by **sources**. Secondly, we have the another bar graph that shows the total amount spent from a particular period, grouped by **category**, and the grouped by **item**.
+  - There are 2 charts on the tab.  The 1st is a bar graph that shows the total amount of money earned from a particular period, grouped by **sources**. Secondly, we have the another bar graph that shows the total amount spent from a particular period, grouped by **category**, and then grouped by **item**.
   - The cells with a gray background shows the places you can edit.
 
 Category
