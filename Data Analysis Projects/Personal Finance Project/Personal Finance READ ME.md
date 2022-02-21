@@ -68,6 +68,7 @@ In order to make life easier for myself and any other person that would like to 
 
 ## Conclusion
 
-After carrying out this project, I found that I have been Spending a lot on food and Airtime credit. I learnt a lot about automation and Dynamic dashboards In this Project.
-  
+After carrying out this project, Here is what I found.
+
+For the month of February 2022, I found that I have been spending a lot on **Food and Home Up Keep as these 2 account for  around 70% of my Expenses**. On the other hand, **My Grohe salary accounts for 60% of income**. In addition, **I saves around 47% of my income.** I learnt a lot from this project. for example automation, building a dynamic dashboard in google sheets, and most importantly, I learnt about my finance.
 
