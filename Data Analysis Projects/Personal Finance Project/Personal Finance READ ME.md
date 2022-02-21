@@ -1,6 +1,6 @@
 
 # Personal Finance
-In other to improve my relationship with money, I decided to keep track of my money in order to be aware of where most of my money is going to. Thus, I made a finance tracker to help with that.
+In order to improve my relationship with money, I decided to keep track of my money so I can be aware of where most of my money is going to. Thus, I made a finance tracker to help with that.
 For most this project I use [Google sheet](https://docs.google.com/spreadsheets/d/1vEobyPacJvvCKcYRdku-EP6aoEGuqFK67RVonRGobpY/edit?usp=sharing) for the analysis and dashboard. In addition, I used [Google Form](https://forms.gle/rfmUZF7yRDtMbejJA) for data collection and [Apps Script](https://github.com/Hemephelus/Data-Analyst/blob/ebd313ba68055096e133469ec488202a3d95cd4b/Data%20Analysis%20Projects/Personal%20Finance%20Project/Automation%20Code) for Automation.
 
 
