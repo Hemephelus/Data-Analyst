@@ -143,9 +143,7 @@ This function finds the **coefficient **of the independent variables that would 
 Ideally, we should log these variables to account for variables that are either too big or too small.
 
 
-$$
-\Beta = (X'X)^{-1}X'Y\,.
-$$
+***B = (X'X)^-1^ * X'Y***
 
 **B** = coefficients of each variable
 
