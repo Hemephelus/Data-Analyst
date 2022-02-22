@@ -110,6 +110,7 @@ In this explanation, I would be making use of a data set I made to find if there
 
 2. **Multiple Correlation**
 		This function finds the relationship between two variables. we use the Pearson correlation coefficient formula to make this function. 
+		
 ![r =\frac{\sum\left(x_{i}-\bar{x}\right)\left(y_{i}-\bar{y}\right)}{\sqrt{\sum\left(x_{i}-\bar{x}\right)^{2} \sum\left(y_{i}-\bar{y}\right)^{2}}}](https://www.gstatic.com/education/formulas2/397133473/en/correlation_coefficient_formula.svg)
 
 ![r](https://www.gstatic.com/education/formulas2/397133473/en/correlation_coefficient_formula_correlation_coefficient_formula_var_1.svg)  = correlation coefficient
