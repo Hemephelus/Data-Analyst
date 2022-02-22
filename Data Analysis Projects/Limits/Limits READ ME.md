@@ -1,6 +1,6 @@
 # Limits
 
-A good way to learn is to practice. Understanding the statistics involved in **Data Analysis and Econometrics** is vital for learning. Hence, I created a statistics calculator add-on that allows economists and data analysts to carry out statistical analysis on google sheets. Right now the addon can do things a simple a **mean, median mode,** to more complex operations like multiple **linear regression.**
+A good way to learn is to practice. Understanding the statistics involved in **Data Analysis and Econometrics** is vital for learning. Hence, I created a statistics calculator add-on that allows economists and data analysts to carry out statistical analysis on google sheets. Right now the addon can do things as simple as **mean and median** to more complex operations like **multiple linear regression.**
 
 The Inspiration for this project was to recreate a desktop application called **EViews**. 
 
